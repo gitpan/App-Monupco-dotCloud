@@ -1,6 +1,6 @@
 --- #YAML:1.0
 name:               App-Monupco-dotCloud
-version:            0.02
+version:            0.03
 abstract:           monupco.com registration agent for dotCloud / Perl applications
 author:
     - Alexander Todorov <atodorov@otb.bg>
@@ -11,10 +11,10 @@ configure_requires:
 build_requires:
     ExtUtils::MakeMaker:  0
 requires:
-    Crypt::SSLeay:   0
-    JSON:            0
-    LWP::UserAgent:  0
-    Pod::Simple:     0
+    JSON:                 0
+    LWP::Protocol::https:  0
+    LWP::UserAgent:       0
+    Pod::Simple:          0
 resources:
     bugtracker:  https://github.com/monupco/monupco-dotcloud-perl/issues
     homepage:    https://github.com/monupco/monupco-dotcloud-perl
