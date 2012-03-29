@@ -7,7 +7,7 @@
 #####################################################################################
 
 package App::Monupco::dotCloud;
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 our $NAME = "monupco-dotcloud-perl";
 
 use App::Monupco::dotCloud::Parser;
@@ -22,8 +22,8 @@ use LWP::UserAgent;
 # load dotCloud environment
 local $/;
 open( my $fh, '<', '/home/dotcloud/environment.json' );
-$json_text   = <$fh>;
-$dotcloud_env = decode_json( $json_text );
+my $json_text   = <$fh>;
+my $dotcloud_env = decode_json( $json_text );
 
 my $data = {
     'user_id'    => $ENV{'MONUPCO_USER_ID'},
@@ -93,7 +93,7 @@ To register your dotCloud Perl application to Monupco do the following:
 
 4) Enable the registration script in your postinstall hook. **Note:**
 If you are using an "approot" your `postinstall` script should be in the 
-directory pointed by the “approot” directive of your `dotcloud.yml`.
+directory pointed by the "approot" directive of your `dotcloud.yml`.
 For more information about `postinstall` turn to 
 http://docs.dotcloud.com/guides/postinstall/.
 
