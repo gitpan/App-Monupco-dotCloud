@@ -1,6 +1,6 @@
 --- #YAML:1.0
 name:               App-Monupco-dotCloud
-version:            0.05
+version:            0.06
 abstract:           monupco.com registration agent for dotCloud / Perl applications
 author:
     - Alexander Todorov <atodorov@otb.bg>
